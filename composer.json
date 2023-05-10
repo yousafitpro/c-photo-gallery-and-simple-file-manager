@@ -1,0 +1,24 @@
+{
+    "name": "yousafitpro/photo-library",
+    "type": "library",
+    "description": "Very helpful for managing photos and all type of files",
+    "keywords": ["Library","photo management"],
+    "homepage": "https://github.com/yousafitpro/c-photo-library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Yousaf",
+            "email": "yousaf.connect@gmail.com",
+            "homepage": "https://github.com/yousafitpro",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "photo-library": "src"
+        }
+    }
+}
