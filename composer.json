@@ -27,7 +27,7 @@
     "extra": {
     "laravel": {
         "providers": [
-            "yousafitpro\\photo_library\\src\\UcPhotoLibraryServiceProvider"
+            "yousafitpro\\photo-library\\src\\UcPhotoLibraryServiceProvider"
         ]
     }
 }
