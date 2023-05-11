@@ -19,6 +19,16 @@
     "autoload": {
         "psr-0": {
             "photo-library": "src"
+        },
+        "psr-4": {
+            "yousafitpro\\photo_library\\": "src"
         }
+    },
+    "extra": {
+    "laravel": {
+        "providers": [
+            "yousafitpro\\photo_library\\src\\us_photo_library_controller"
+        ]
     }
+}
 }
