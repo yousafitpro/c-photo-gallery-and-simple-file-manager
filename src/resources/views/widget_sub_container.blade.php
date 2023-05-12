@@ -33,7 +33,7 @@
                                     <a class="dropdown-item" href="{{url($src).'/'.$item->store_by_name}}" download>
                                         <i class="fa fa-download" ></i>
                                         Download</a>
-                                    <a class="dropdown-item" href="#" onclick="delete_file('{{zpayd_encrypt($item->id)}}')" >
+                                    <a class="dropdown-item" href="#" onclick="delete_file('{{app_encrypt($item->id)}}')" >
                                         <i class="fa fa-trash" ></i>
                                         Delete</a>
                                 </div>
@@ -66,6 +66,7 @@
                 beforeSend:function(){
                 },
                 success:function(response){
+                    $("#uc_gallery_modal").modal('hide')
                     load_gallery()
                 },
                 error: function (jqXHR, textStatus, errorThrown) {

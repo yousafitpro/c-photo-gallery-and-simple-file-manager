@@ -17,6 +17,7 @@
             <div class="col-md-12">
                 <label>Name</label>
                 <input required id="upload_file_name" class="form-control" name="upload_file_name" >
+                <input  hidden id="user_id" value="{{$user_id}}" class="form-control" name="user_id" >
             </div>
         </div><br>
         <div class="row">
@@ -220,7 +221,7 @@
         $("#gallery_widget_sub_container").empty();
         $("#gallery_widget_sub_container").append('<h3 style="text-align: center; color: gray">Loading</h3>');
         $.ajax({
-            url:"{{route('uc_gallery.gallery_widget')}}?searchKeyword="+input,
+            url:"{{route('uc_gallery.gallery_widget')}}?searchKeyword="+input+'&user_id={{$user_id}}',
             method:'get',
             data: {"_token": "{{ csrf_token() }}"},
             beforeSend:function(){

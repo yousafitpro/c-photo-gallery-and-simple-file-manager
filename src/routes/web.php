@@ -12,7 +12,6 @@
 //adasd
 //asdasd
 Route::prefix('Gallery')
-    ->middleware('auth')
     ->namespace('Yousafitpro\PhotoLibrary\Controllers')
     ->group(function () {
         Route::get('/', 'UcPhotoLibraryController@index')->name('uc_gallery.index');

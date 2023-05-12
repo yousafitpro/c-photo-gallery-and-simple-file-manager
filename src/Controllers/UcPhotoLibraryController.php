@@ -4,6 +4,7 @@ namespace Yousafitpro\PhotoLibrary\Controllers;
 use Yousafitpro\PhotoLibrary\models\ucGalleryFile;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 class UcPhotoLibraryController extends Controller
 {
   //asdasdasdasdas
@@ -17,7 +18,7 @@ class UcPhotoLibraryController extends Controller
   {
     //asdasd
       $SRC = 'my_gallary';
-      $data['list']=ucGalleryFile::where('user_id',auth()->id())->where(['deleted_at'=>null]);
+      $data['list']=ucGalleryFile::where('user_id',$request->user_id)->where(['deleted_at'=>null]);
         if($request->has('searchKeyword'))
         {
           $data['list']=$data['list']->where('name', 'like', '%' . request('searchKeyword') . '%');
@@ -41,7 +42,7 @@ class UcPhotoLibraryController extends Controller
                 $data['file_original_name'] = $img->getClientOriginalName();
                 $file=new ucGalleryFile();
                 $file->name=$request->upload_file_name;
-                $file->user_id=auth()->user()->id;
+                $file->user_id=$request->user_id;
                 $file->store_by_name=$data['file_given_name'];
                 $file->original_name=$data['file_original_name'];
                 $file->extension=$data['file_extension'];
