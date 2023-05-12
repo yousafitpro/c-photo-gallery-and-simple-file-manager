@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 class UcPhotoLibraryController extends Controller
 {
-  //asdasd
+  //asdasdasdasdas
   public $SRC = 'my_gallary';
   public function index(Request $request)
   {
