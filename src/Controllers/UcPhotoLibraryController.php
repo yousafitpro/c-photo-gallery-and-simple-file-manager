@@ -11,7 +11,7 @@ class UcPhotoLibraryController extends Controller
   public function index(Request $request)
   {
 //adasdasdadad
-      return view('gallery.index');
+      return view('UcPhotoLib::index');
   }
   public function gallery_widget(Request $request)
   {
@@ -24,7 +24,7 @@ class UcPhotoLibraryController extends Controller
         }
       $data['list']=$data['list']->latest()->get();
       $data['src']='public/'.$SRC;
-      return view('gallery.widget_sub_container',$data);
+      return view('UcPhotoLib::widget_sub_container',$data);
   }
   public function upload_file(Request $request)
   {
