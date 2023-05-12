@@ -1,4 +1,4 @@
-Keep in mind this is only for laravel
+Keep in mind this is only for laravel ( PHP )
 
 
 Step-1 ( install composer using following command )
