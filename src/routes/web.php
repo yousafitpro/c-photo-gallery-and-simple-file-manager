@@ -2,8 +2,8 @@
 
 
 Route::group([
-    'namespace' => 'yousafitpro\photo_library',
+    'namespace' => 'Yousafitpro\PhotoLibrary\Controllers',
     'prefix' => 'photo-library',
 ], function () {
-    Route::get('/test1', 'UserController@helloWorld');
+    Route::get('', 'UcPhotoLibraryController@index');
 });
