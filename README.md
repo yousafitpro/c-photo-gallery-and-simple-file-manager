@@ -1,4 +1,5 @@
-Keep in mind this is only for laravel ( PHP )
+Keep in mind this is only for laravel ( PHP ) and Bootstrap And Jquery are required
+
 
 
 Step-1 ( install composer using following command )
