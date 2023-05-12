@@ -1,4 +1,4 @@
-<div class="modal fade" id="upload_file_modal" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog"
+<div class="modal fade" id="uc_upload_file_modal" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm"  role="document" style="border: solid 1px gray">
         <div class="modal-content">
@@ -71,7 +71,7 @@
                 <input id="gallery_search_input" onkeyup="Gallery_Search()" class="form-control" placeholder="Search here">
             </div>
             <div class="col-md-6">
-                <button class="btn btn-primary " data-target="#upload_file_modal" data-toggle="modal" style="float: right; width: 130px"> <i class="fas fa-file-upload"></i> Upload</button>
+                <button class="btn btn-primary " data-target="#uc_upload_file_modal" data-toggle="modal" style="float: right; width: 130px"> <i class="fas fa-file-upload"></i> Upload</button>
 
             </div>
         </div>
@@ -86,7 +86,7 @@
 <script>
 
     function close_upload_file_modal(){
-        $("#upload_file_modal").modal("hide")
+        $("#uc_upload_file_modal").modal("hide")
     }
     function fun_upload_file()
     {
