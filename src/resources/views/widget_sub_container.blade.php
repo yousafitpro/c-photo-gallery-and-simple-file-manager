@@ -14,6 +14,10 @@
                                 <img style="height: 150px; width: 100%" src="{{url('gallery icons/pdf.png')}}">
                             @elseif($item->extension=='png')
                                 <img style="height: 150px; width: 100%" src="{{url($src.'/'.$item->store_by_name)}}">
+                                @elseif($item->extension=='jpg')
+                                <img style="height: 150px; width: 100%" src="{{url($src.'/'.$item->store_by_name)}}">
+                                @elseif($item->extension=='jpeg')
+                                <img style="height: 150px; width: 100%" src="{{url($src.'/'.$item->store_by_name)}}">
                             @else
                                 <img style="height: 150px; width: 100%" src="{{url('gallery icons/file.png')}}">
                             @endif
