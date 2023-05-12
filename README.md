@@ -22,7 +22,7 @@ step-3 ( place this code on your page to show the Gallery )
 
 {!! uc_lib_get_widget(auth()->id()) !!}
 
-You can pass 0 instead of auth()->id() if there is no authentication
+You can put 0 instead of auth()->id() if there is no authentication
 
 ![image](https://github.com/yousafitpro/c-photo-library-and-simple-file-manager/assets/77118786/3100f7fb-6a61-4fc6-9536-9f2c948eb3c6)
 ![image](https://github.com/yousafitpro/c-photo-library-and-simple-file-manager/assets/77118786/d18ffd04-93d2-4db5-b95c-2a2ee329a665)
