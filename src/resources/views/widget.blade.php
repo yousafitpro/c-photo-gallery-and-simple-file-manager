@@ -166,7 +166,7 @@
                 success: (data) => {
                     this.reset();
 
-                    $("#upload_file_modal").modal('hide')
+                    close_upload_file_modal()
                     load_gallery()
 
                     console.log(data);
