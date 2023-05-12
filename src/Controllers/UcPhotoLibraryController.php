@@ -10,7 +10,7 @@ class UcPhotoLibraryController extends Controller
   public $SRC = 'my_gallary';
   public function index(Request $request)
   {
-//adasdasd
+//adasdasdadad
       return view('gallery.index');
   }
   public function gallery_widget(Request $request)
