@@ -26,4 +26,12 @@ if ( ! function_exists('app_decrypt')){
         return ($number / 91378264);
     }
 }
+function saveImageAjax($img, $path, $name = null)
+{
+    $name = $name ?: rand(1000, 9999) . time() . '.' . $img->getClientOriginalExtension();
+    $img->storeAs($path,$name,'public');
+
+   // $file = $img->file->store('public/documents');
+    return $name;
+}
 //asdasd
