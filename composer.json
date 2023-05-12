@@ -21,6 +21,7 @@
             "photo-library": "src"
         },
         "psr-4": {
+            "App\\": "app/",
             "yousafitpro\\photo_library\\": "src"
         }
     },
