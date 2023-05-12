@@ -7,7 +7,7 @@ class UcPhotoLibraryController extends Controller
 
   public function index()
   {
-///asdasdasdas
+///asdasdasdasasdasd
 
       return view('UcPhotoLib::index');
   }
