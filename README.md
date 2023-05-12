@@ -1,6 +1,6 @@
 Keep in mind this is only for laravel ( PHP ) and Bootstrap And Jquery are required
 
-Vido Tutorial
+Video Tutorial
 
 https://github.com/yousafitpro/c-photo-library-and-simple-file-manager
 
