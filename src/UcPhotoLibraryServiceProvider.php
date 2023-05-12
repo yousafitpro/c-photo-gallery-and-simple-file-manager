@@ -1,6 +1,6 @@
 <?php
 
-    namespace yousafitpro\photo_library\src;
+namespace Yousafitpro\PhotoLibrary;
     use Illuminate\Support\ServiceProvider;
     class UcPhotoLibraryServiceProvider extends ServiceProvider {
         public function boot()
