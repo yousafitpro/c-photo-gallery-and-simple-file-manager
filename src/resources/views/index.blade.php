@@ -6,7 +6,7 @@
         <h4 class="page-title">Gallery</h4>
 
     </div>
-@include('gallery.widget')
+@include('UcPhotoLib::gallery.widget')
 
 @stop
 @section('script')
