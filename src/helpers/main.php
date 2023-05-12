@@ -10,7 +10,7 @@ if (! function_exists('uc_lib_get_widget')) {
 
 if (! function_exists('uc_lib_get_modal')) {
     function  uc_lib_get_modal($user_id) {
-        ///asdasdsdasdas
+        ///asdasdsdasdasadasdasd
        return view('UcPhotoLib::gallery_modal',['user_id'=>$user_id]);
     }
 }
