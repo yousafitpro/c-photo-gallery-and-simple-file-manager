@@ -1,3 +1,5 @@
+<?php
+
 namespace Yousafitpro\PhotoLibrary\models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
