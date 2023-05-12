@@ -22,13 +22,13 @@
         },
         "psr-4": {
             "App\\": "app/",
-            "yousafitpro\\photo_library\\": "src"
+            "yousafitpro\\photo_library\\": "src/"
         }
     },
     "extra": {
     "laravel": {
         "providers": [
-            "yousafitpro\\photo_library\\src\\UcPhotoLibraryServiceProvider"
+            "vendor\\yousafitpro\\photo_library\\src\\UcPhotoLibraryServiceProvider"
         ]
     }
 }
