@@ -10,3 +10,4 @@ class ucGalleryFile extends Model
     use HasFactory;
     protected $table = 'uc_gallery_files';
 }
+//asdasd
