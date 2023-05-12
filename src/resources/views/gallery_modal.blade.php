@@ -12,7 +12,7 @@
             </div>
             <div>
                 <div class="modal-body">
-                  @include('gallery.widget')
+                  @include('UcPhotoLib::widget')
 
                 </div>
 
