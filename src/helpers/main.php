@@ -4,7 +4,7 @@
 if (! function_exists('uc_lib_get_widget')) {
     function  uc_lib_get_widget() {
         ///asdasdsdasdas
-       return view('UcPhotoLib::index');
+       return view('UcPhotoLib::widget');
     }
 }
 
