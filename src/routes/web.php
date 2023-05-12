@@ -9,8 +9,8 @@
 // });
 
 
-
-
+//adasd
+//asdasd
 Route::prefix('Gallery')
     ->middleware(['auth','admin'])
     ->namespace('Yousafitpro\PhotoLibrary\Controllers')
