@@ -5,7 +5,7 @@
             <div class="card">
 
                 <div class="card-body" style="padding: 2px">
-                    <input hidden id="coppy_link{{$item->id}}" value="{{'http://merchant.zpayd.com/'.$src.'/'.$item->store_by_name}}">
+                    <input hidden id="coppy_link{{$item->id}}" value="{{url($src.'/'.$item->store_by_name)}}">
 
                     <div style="position:relative; height: 150px" >
 
