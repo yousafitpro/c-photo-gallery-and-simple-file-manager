@@ -18,7 +18,7 @@
     },
     "autoload": {
         "files": [
-           "helpers/main.php"
+           "src/helpers/main.php"
         ],
         "psr-4": {
             "Yousafitpro\\PhotoLibrary\\": "src/"
