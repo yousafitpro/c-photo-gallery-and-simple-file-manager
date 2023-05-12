@@ -24,12 +24,5 @@
             "App\\": "app/",
             "yousafitpro\\photo_library\\": "src/"
         }
-    },
-    "extra": {
-    "laravel": {
-        "providers": [
-            "vendor\\yousafitpro\\photo_library\\src\\UcPhotoLibraryServiceProvider"
-        ]
     }
-}
 }
