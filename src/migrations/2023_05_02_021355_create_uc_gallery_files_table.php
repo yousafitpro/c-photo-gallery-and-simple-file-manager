@@ -13,7 +13,7 @@ class CreateUCGalleryFilesTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('uc_gallery_files');
+    
         Schema::create('uc_gallery_files', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id');
