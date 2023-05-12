@@ -15,7 +15,7 @@ class UcPhotoLibraryController extends Controller
   }
   public function gallery_widget(Request $request)
   {
-    
+    //asdasd
       $SRC = 'my_gallary';
       $data['list']=ucGalleryFile::where('user_id',auth()->id())->where(['deleted_at'=>null]);
         if($request->has('searchKeyword'))
