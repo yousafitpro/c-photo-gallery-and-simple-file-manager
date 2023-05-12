@@ -1,7 +1,7 @@
 <?php
 
 namespace Yousafitpro\PhotoLibrary\Controllers;
-use Yousafitpro\PhotoLibrary\ucGalleryFile;
+use Yousafitpro\PhotoLibrary\models\ucGalleryFile;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 class UcPhotoLibraryController extends Controller
