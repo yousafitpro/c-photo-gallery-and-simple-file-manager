@@ -58,6 +58,7 @@
 
     }else
     {
+        //adasdasd
         $is_card=true;
     }
 
