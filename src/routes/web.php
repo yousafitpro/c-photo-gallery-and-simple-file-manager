@@ -1,14 +1,25 @@
 <?php
 
 
+// Route::group([
+//     'namespace' => 'Yousafitpro\PhotoLibrary\Controllers',
+//     'prefix' => 'photo-library',
+// ], function () {
+//     Route::get('', 'UcPhotoLibraryController@index');
+// });
+
+
+
+
 Route::prefix('Gallery')
     ->middleware(['auth','admin'])
+    ->namespace('Yousafitpro\PhotoLibrary\Controllers')
     ->group(function () {
-        Route::get('/', [\App\Http\Controllers\GalleryController::class, 'index'])->name('uc_gallery.index');
-        Route::post('/upload_file', [\App\Http\Controllers\GalleryController::class, 'upload_file'])->name('uc_gallery.upload_file');
-        Route::get('/gallery-widget', [\App\Http\Controllers\GalleryController::class, 'gallery_widget'])->name('uc_gallery.gallery_widget');
-        Route::get('/gallery-delete-file/{id}', [\App\Http\Controllers\GalleryController::class, 'gallery_delete_file'])->name('uc_gallery.gallery_delete_file');
-        Route::get('/gallery-widget-search', [\App\Http\Controllers\GalleryController::class, 'gallery_widget_search'])->name('uc_gallery.gallery_widget_search');
+        Route::get('/', 'UcPhotoLibraryController@index')->name('uc_gallery.index');
+        Route::post('/upload_file', ['UcPhotoLibraryController@upload_file'])->name('uc_gallery.upload_file');
+        Route::get('/gallery-widget', ['UcPhotoLibraryController@gallery_widget'])->name('uc_gallery.gallery_widget');
+        Route::get('/gallery-delete-file/{id}', [ 'UcPhotoLibraryController@gallery_delete_file'])->name('uc_gallery.gallery_delete_file');
+        Route::get('/gallery-widget-search', ['UcPhotoLibraryController@gallery_widget_search'])->name('uc_gallery.gallery_widget_search');
 ///adasd
     });
 
