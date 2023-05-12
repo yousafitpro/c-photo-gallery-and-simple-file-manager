@@ -99,7 +99,7 @@
 
 
         {{--$.ajax({--}}
-        {{--    url:"{{route('gallery.upload_file')}}",--}}
+        {{--    url:"{{route('uc_gallery.upload_file')}}",--}}
         {{--    method:'post',--}}
         {{--    contentType: false,--}}
         {{--    processData: false,--}}
@@ -157,7 +157,7 @@
                     return xhr;
                 },
                 type:'POST',
-                url: "{{route('gallery.upload_file')}}",
+                url: "{{route('uc_gallery.upload_file')}}",
                 data: formData,
                 cache:false,
                 contentType: false,
@@ -192,7 +192,7 @@
                 }, false);
                 return xhr;
             },
-            url:"{{route('gallery.gallery_widget_search')}}",
+            url:"{{route('uc_gallery.gallery_widget_search')}}",
             method:'get',
             data: {"_token": "{{ csrf_token() }}"},
             beforeSend:function(){
@@ -220,7 +220,7 @@
         $("#gallery_widget_sub_container").empty();
         $("#gallery_widget_sub_container").append('<h3 style="text-align: center; color: gray">Loading</h3>');
         $.ajax({
-            url:"{{route('gallery.gallery_widget')}}?searchKeyword="+input,
+            url:"{{route('uc_gallery.gallery_widget')}}?searchKeyword="+input,
             method:'get',
             data: {"_token": "{{ csrf_token() }}"},
             beforeSend:function(){
