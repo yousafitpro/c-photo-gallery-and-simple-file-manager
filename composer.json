@@ -2,7 +2,7 @@
     "name": "yousafitpro/photo-gallery-and-simple-file-manager",
     "type": "library",
     "description": "Very helpful for managing photos and all type of files",
-    "keywords": ["Library","photo management"],
+    "keywords": ["photo gallery","photo management","file manager","gallery","Laravel","Composer"],
     "homepage": "https://github.com/yousafitpro/c-photo-library-and-simple-file-manager",
     "license": "MIT",
     "authors": [
